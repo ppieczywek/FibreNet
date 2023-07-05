@@ -1,5 +1,0 @@
-- dodano funkcjonalność modif_spring
-- w strukturze SpringStructure wczytywane są dane dla c1 i c2 z pliku modelu
-- zmieniony kernel, zerwanie na podstawie wartości ze struktury SpringStructure c1 i c2
-- zmieniony sposób generacji modelu - sprężyny w pobliży szczęk są niezniszczalne, nowe pola w strukturze SPRING
-- dodano monity o wprowadzanych zmianach
