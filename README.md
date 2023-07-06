@@ -1,4 +1,4 @@
-## FibreNet project documentation file
+## FibreNet project documentation
 
 
 ### 1. About this repository
