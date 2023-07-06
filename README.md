@@ -16,7 +16,10 @@ and angle potentials
 * periodic boundary conditions or finite simulation box
 
 When executed code requires an input text file to run the simulations. The input text file contains informations about types of structures used, basic simulation settings, such as size of simulation box, time step, exported data types, definitions of non-bonded interactions etc.. The input file contains also path to model file. Model file is written in plain text format. Model file contains information regarding basic data structures used by simulation software - particles/beads - their initial positions, properties, connectivity.
+
 <img title="Screenshot showing the simulate fibre networks" src="model_example.png">
+Exmples of simulated fibre networks - fibre network under tensile force
+
 Presented software is siutable for execution on both GPUs and CPUs. The code architecture was optimized to perform computations using GPUs, while CPU unit manages the host code. This was achieved by including the OpenCL open-source library (Khronos Group, USA). The project was written using the Microsoft Visual Studio Version 16.4.0 (Microsoft Corporation, USA). The host code was written using C++ programming language. It is responsible for managing all OpenCL instructions (managing the data buffers, compiling kernels etc.), reading input files, reading model files, writing all output data, uploading kernels. In the current version of the project all OpenCL kernels are storred in a text file "kernel.cl". This file contains all the necessary definitions of sturctures and functions to perform particle dynamics simulations. The presence of the kernel.cl file in the same directory as the executable is required to run the compiled code.
 >Warning
 There are no guaranties that this software will run on your machine.   
